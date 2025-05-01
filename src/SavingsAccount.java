@@ -16,11 +16,11 @@ public class SavingsAccount extends Account {
         } else {
             super.withdraw(amount);
         }
-
     }
 
     public void applyInterest() {
-
+        double newBalance = super.getBalance() * interestRate;
+        super.setBalance(newBalance);
     }
 
 
