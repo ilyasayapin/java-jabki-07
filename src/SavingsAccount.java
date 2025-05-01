@@ -1,20 +1,15 @@
 import javax.swing.*;
 
-public class SavingsAccount extends Account{
+public class SavingsAccount extends Account {
 
-    private double interestRate;
+    private int interestRate;
 
-    /*public SavingsAccount() {
-        super(balance);
-        this.interestRate = interestRate;
-    }*/
-
-    public SavingsAccount(double balance, double interestRate) {
+    public SavingsAccount(double balance, int interestRate) {
         super(balance);
         this.interestRate = interestRate;
     }
 
-@Override
+    @Override
     public void withdraw(double amount) {
         if (amount > 1000) {
             throw new IllegalArgumentException("Запрет на снятие более 1000р за раз");
@@ -22,7 +17,12 @@ public class SavingsAccount extends Account{
             super.withdraw(amount);
         }
 
-}
+    }
+
+    public void applyInterest() {
+
+
+    }
 
 
 }
