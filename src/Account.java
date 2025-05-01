@@ -20,6 +20,15 @@ public class Account {
         this.balance -= amount;
     }
 
+    public double getBalance() {
+        return this.balance;
+    }
+
+    public void setBalance(double amount) {
+        this.balance += amount;
+    }
+
+
     public void displayInfo() {
         System.out.printf("Номер счета: %s,\nБаланс счета: %s",
                 this.accountNumber,
