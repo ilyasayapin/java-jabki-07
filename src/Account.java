@@ -21,7 +21,6 @@ public class Account {
                 this.accountNumber,
                 this.balance
         );
-
     }
 
 }
