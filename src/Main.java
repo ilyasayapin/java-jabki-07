@@ -44,7 +44,7 @@ public class Main {
          * - переопределение методов (@Override)
          * - использование ссылок суперкласса для объектов подклассов (super)
          */
-        Shape[] shapes = { new Circle(), new Rectangle(), new Shape() };
+        Shape[] shapes = {new Circle(), new Rectangle(), new Shape()};
         for (Shape s : shapes) {
             s.draw();
         }
@@ -59,10 +59,12 @@ public class Main {
          * - Мы используем клавиатуру, мышь, сканер для ввода информации (один метод read(..)), но везде своя реализация
          * - В комании работают разные люди и все получают зарплату, но реализация может отличаться (в продажах сделка, у разработчиков фикс)
          */
-        Account account = new Account(1);
-        account.deposit(100);
-        account.displayInfo();
+//        Account account = new Account(1);
+//        account.deposit(100);
+//        account.displayInfo();
         SavingsAccount savingsAccount = new SavingsAccount(100, 50);
-        savingsAccount.withdraw(1001.0);
+//        savingsAccount.withdraw(1001.0);*/
+        savingsAccount.applyInterest();
+        savingsAccount.displayInfo();
     }
 }

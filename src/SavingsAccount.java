@@ -19,9 +19,16 @@ public class SavingsAccount extends Account {
     }
 
     public void applyInterest() {
-        double newBalance = super.getBalance() * interestRate;
-        super.setBalance(newBalance);
+        double newBalance = super.getBalance() * interestRate / 100;
+        super.setBalance(super.getBalance() + newBalance);
     }
 
-
+    @Override
+    public void displayInfo() {
+        System.out.printf("\nНомер счета: %s,\nПроценты по вкладу: %s,\nБаланс счета: %s",
+                super.getAccountNumber(),
+                this.interestRate,
+                super.getBalance()
+        );
+    }
 }
