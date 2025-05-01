@@ -3,6 +3,10 @@ public class Account {
     private int accountNumber = (int) (Math.random() * 100 + 1);
     private double balance;
 
+    public Account(double balance) {
+        this.balance = balance;
+    }
+
     public void deposit(double amount) {
         this.balance += amount;
     }
