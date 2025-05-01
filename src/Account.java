@@ -16,5 +16,12 @@ public class Account {
         this.balance -= amount;
     }
 
+    public void displayInfo() {
+        System.out.printf("Номер счета: %s,\nБаланс счета: %s",
+                this.accountNumber,
+                this.balance
+        );
+
+    }
 
 }
