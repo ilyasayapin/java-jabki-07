@@ -59,15 +59,7 @@ public class Main {
          * - Мы используем клавиатуру, мышь, сканер для ввода информации (один метод read(..)), но везде своя реализация
          * - В комании работают разные люди и все получают зарплату, но реализация может отличаться (в продажах сделка, у разработчиков фикс)
          */
-//        Account account = new Account(1);
-//        account.deposit(100);
-//        account.displayInfo();
-//        SavingsAccount savingsAccount = new SavingsAccount(100, 50);
-//        savingsAccount.withdraw(1001.0);*/
-//        savingsAccount.applyInterest();
-//        savingsAccount.displayInfo();
-//        CreditAccount creditAccount = new CreditAccount(100,10);
-//        creditAccount.withdraw(109);
+
         Account[] accounts = {
                 new SavingsAccount(100, 30),
                 new CreditAccount(200, 50)
