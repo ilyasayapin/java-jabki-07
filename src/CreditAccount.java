@@ -16,4 +16,13 @@ public class CreditAccount extends Account{
         } super.setBalance(super.getBalance() - amount);
     }
 
+    @Override
+    public void displayInfo() {
+        System.out.printf("\nТип аккаунта: CreditAccount.\nНомер счета: %s,\nКредитный лимит: %s,\nБаланс счета: %s",
+                super.getAccountNumber(),
+                this.creditLimit,
+                super.getBalance()
+        );
+    }
+
 }

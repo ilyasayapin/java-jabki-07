@@ -23,7 +23,7 @@ public class SavingsAccount extends Account {
 
     @Override
     public void displayInfo() {
-        System.out.printf("\nНомер счета: %s,\nПроценты по вкладу: %s,\nБаланс счета: %s",
+        System.out.printf("\nТип аккаунта: SavingsAccount.\nНомер счета: %s,\nПроценты по вкладу: %s,\nБаланс счета: %s",
                 super.getAccountNumber(),
                 this.interestRate,
                 super.getBalance()

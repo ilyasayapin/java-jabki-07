@@ -66,7 +66,18 @@ public class Main {
 //        savingsAccount.withdraw(1001.0);*/
 //        savingsAccount.applyInterest();
 //        savingsAccount.displayInfo();
-        CreditAccount creditAccount = new CreditAccount(100,10);
-        creditAccount.withdraw(109);
+//        CreditAccount creditAccount = new CreditAccount(100,10);
+//        creditAccount.withdraw(109);
+        Account[] accounts = {
+                new SavingsAccount(100, 30),
+                new CreditAccount(200, 50)
+        };
+
+        for (Account i : accounts) {
+            i.withdraw(90);
+            System.out.println();
+            i.displayInfo();
+        }
+
     }
 }
