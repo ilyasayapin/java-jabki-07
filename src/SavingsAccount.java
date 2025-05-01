@@ -1,5 +1,3 @@
-import javax.swing.*;
-
 public class SavingsAccount extends Account {
 
     private int interestRate;

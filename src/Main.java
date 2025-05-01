@@ -62,9 +62,11 @@ public class Main {
 //        Account account = new Account(1);
 //        account.deposit(100);
 //        account.displayInfo();
-        SavingsAccount savingsAccount = new SavingsAccount(100, 50);
+//        SavingsAccount savingsAccount = new SavingsAccount(100, 50);
 //        savingsAccount.withdraw(1001.0);*/
-        savingsAccount.applyInterest();
-        savingsAccount.displayInfo();
+//        savingsAccount.applyInterest();
+//        savingsAccount.displayInfo();
+        CreditAccount creditAccount = new CreditAccount(100,10);
+        creditAccount.withdraw(109);
     }
 }
