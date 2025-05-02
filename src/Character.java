@@ -8,6 +8,18 @@ public class Character {
         this.health = health;
     }
 
+    public int getName() {
+        return name;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
     public void attack() {
         System.out.println("Атакую!");
     }
@@ -16,5 +28,7 @@ public class Character {
         this.health -= damage;
         return health;
     }
+
+
 
 }
