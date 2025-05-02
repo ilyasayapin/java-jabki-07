@@ -6,7 +6,7 @@ public class Drone extends Vehicle{
 
     @Override
     public void deliver(String destination) {
-        System.out.println("Дрон взлетел");
+        System.out.print("Дрон взлетел. ");
         super.deliver(destination);
     }
 }

@@ -9,6 +9,6 @@ public class Vehicle {
     }
 
     public void deliver(String destination) {
-        System.out.printf("Доставка в %S.", destination);
+        System.out.printf("Доставка в %S.\n", destination);
     }
 }

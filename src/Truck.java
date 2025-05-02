@@ -6,7 +6,7 @@ public class Truck extends Vehicle{
 
     @Override
     public void deliver(String destination) {
-        System.out.println("Грузовик загружен.");
+        System.out.print("Грузовик загружен. ");
         super.deliver(destination);
     }
 

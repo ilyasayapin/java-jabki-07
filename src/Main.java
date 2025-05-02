@@ -81,5 +81,8 @@ public class Main {
         truck.deliver("москва");
         Drone drone = new Drone(200, 0.5);
         drone.deliver("питер");
+        System.out.println();
+        Deliver.startDelivery(truck,"Казань");
+        Deliver.startDelivery(drone,"Луна");
     }
 }
