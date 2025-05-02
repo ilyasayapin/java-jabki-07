@@ -103,7 +103,8 @@ public class Main {
         mage.attack();
         warrior.block(80);
         System.out.printf("\nМагия вне Хогвардса запрещена! Бой окончен. Победил: %s",
-                warrior.getName());
+                warrior.getName()
+        );
 
 
 
