@@ -1,4 +1,5 @@
 import java.awt.dnd.DragSourceDragEvent;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -61,6 +62,7 @@ public class Main {
          * - В комании работают разные люди и все получают зарплату, но реализация может отличаться (в продажах сделка, у разработчиков фикс)
          */
 
+        // 1.Банковские счета
         Account[] accounts = {
                 new SavingsAccount(100, 30),
                 new CreditAccount(200, 50)
@@ -73,9 +75,22 @@ public class Main {
         }
         System.out.println();
         System.out.println("---");
+
+        // 2.Система доставки
         Truck truck = new Truck(100, 10);
         Drone drone = new Drone(200, 0.5);
         Deliver.startDelivery(truck, "Казань");
         Deliver.startDelivery(drone, "Луна");
+
+        // 3.Зоопарк
+        ArrayList<Animal> animal = new ArrayList<Animal>();
+        animal.add(new Lion("Левка",10));
+        animal.add(new Parrot("Кеша",5));
+
+        for (Animal j : animal) {
+
+        }
+
+
     }
 }
