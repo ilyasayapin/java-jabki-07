@@ -8,7 +8,7 @@ public class Character {
         this.health = health;
     }
 
-    public int getName() {
+    public String getName() {
         return name;
     }
 

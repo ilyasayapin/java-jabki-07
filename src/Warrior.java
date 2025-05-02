@@ -10,8 +10,11 @@ public class Warrior extends Character {
         System.out.println(" Мечом в лицо!!");
     }
 
-    public static int block(int damage) {
+    public int block(int damage) {
         damage = damage / 2;
+        System.out.printf("%s заблокировал половину урона. Здоровье стало: %s",
+                getName(),
+                getHealth());
         return damage;
     }
 
