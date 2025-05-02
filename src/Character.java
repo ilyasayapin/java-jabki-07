@@ -21,7 +21,7 @@ public class Character {
     }
 
     public void attack() {
-        System.out.println("Атакую!");
+        System.out.print("Атакую!");
     }
 
     public int takeDamage(int damage) {

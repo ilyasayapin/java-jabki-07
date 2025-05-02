@@ -92,15 +92,16 @@ public class Main {
 //        }
 
         // 4.Битва героев
+        System.out.println("---");
         Warrior warrior = new Warrior("Воин Петя",100);
         Mage mage = new Mage("Маг Коля", 100);
         System.out.println();
-        System.out.println("---");
         warrior.attack();
         mage.takeDamage(50);
         mage.heal(20);
+        System.out.println();
         mage.attack();
-        warrior.takeDamage( warrior.block(50));
+        warrior.block(80);
 
 
 
