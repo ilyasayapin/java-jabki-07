@@ -87,9 +87,11 @@ public class Main {
         animal.add(new Lion("Левка",10));
         animal.add(new Parrot("Кеша",5));
 
-        for (Animal j : animal) {
+//        for (Animal j : animal) {
+//
+//        }
 
-        }
+        System.out.println(Warrior.block(10));
 
 
     }
