@@ -4,7 +4,7 @@
  * - возможность добавлять своё поведение,
  * - возможность переопределять поведение суперкласса.
  */
-public class Dog extends Animal {
+public class Dog extends AnimalClasswork {
 
     /**
      * Аннотация @Override:

@@ -9,16 +9,15 @@ public class Main {
          * Наследование (extends)
          * Наследование — это механизм, при котором один класс может унаследовать свойства и методы другого класса.
          */
-        Dog dog = new Dog();
-        Animal animal = new Animal();
-
+//        Dog dog = new Dog();
+//        Animal animal = new Animal();
         /**
          * Классы Animal & Dog
          * Переопределение методов (@Override)
          * Переопределение — это написание своей версии метода, который уже есть в суперклассе.
          */
-        dog.speak();
-        animal.speak();
+//        dog.speak();
+//        animal.speak();
 
         /**
          * Классы Vehicle & Car
@@ -27,8 +26,8 @@ public class Main {
          * - Вызвать конструктор суперкласса
          * - Вызвать метод родителя
          */
-        Car car = new Car("Лада", "Нива");
-        car.startEngine();
+//        Car car = new Car("Лада", "Нива");
+//        car.startEngine();
 
         /**
          * - Класс Car наследует Vehicle
@@ -46,10 +45,10 @@ public class Main {
          * - переопределение методов (@Override)
          * - использование ссылок суперкласса для объектов подклассов (super)
          */
-        Shape[] shapes = {new Circle(), new Rectangle(), new Shape()};
-        for (Shape s : shapes) {
-            s.draw();
-        }
+//        Shape[] shapes = {new Circle(), new Rectangle(), new Shape()};
+//        for (Shape s : shapes) {
+//            s.draw();
+//        }
 
         /**
          * Что даёт полиморфизм?
@@ -72,17 +71,11 @@ public class Main {
             System.out.println();
             i.displayInfo();
         }
-
         System.out.println();
-        Vehicle vehicle = new Vehicle(80,1.5);
-        vehicle.deliver("Самара");
-        System.out.println();
-        Truck truck = new Truck(100,10);
-        truck.deliver("москва");
+        System.out.println("---");
+        Truck truck = new Truck(100, 10);
         Drone drone = new Drone(200, 0.5);
-        drone.deliver("питер");
-        System.out.println();
-        Deliver.startDelivery(truck,"Казань");
-        Deliver.startDelivery(drone,"Луна");
+        Deliver.startDelivery(truck, "Казань");
+        Deliver.startDelivery(drone, "Луна");
     }
 }

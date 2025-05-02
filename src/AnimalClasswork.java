@@ -1,4 +1,4 @@
-public class Animal {
+public class AnimalClasswork {
 
     private String name = "Абстрактная живность";
 
