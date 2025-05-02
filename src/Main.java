@@ -93,7 +93,7 @@ public class Main {
 
         // 4.Битва героев
         System.out.println("---");
-        Warrior warrior = new Warrior("Воин Петя",100);
+        Warrior warrior = new Warrior("Воин Петя",90);
         Mage mage = new Mage("Маг Коля", 100);
         System.out.println();
         warrior.attack();
@@ -102,6 +102,8 @@ public class Main {
         System.out.println();
         mage.attack();
         warrior.block(80);
+        System.out.printf("\nМагия вне Хогвардса запрещена! Бой окончен. Победил: %s",
+                warrior.getName());
 
 
 

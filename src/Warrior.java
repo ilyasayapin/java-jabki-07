@@ -15,11 +15,10 @@ public class Warrior extends Character {
     }
 
     public void block(int damage) {
-        int newDamage = damage / 2;
+        takeDamage(damage / 2);
         System.out.printf("%s заблокировал половину урона. Здоровье стало: %s",
                 getName(),
                 getHealth());
-        takeDamage(newDamage);
     }
 
 }
