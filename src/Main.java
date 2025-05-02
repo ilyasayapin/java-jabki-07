@@ -1,3 +1,5 @@
+import java.awt.dnd.DragSourceDragEvent;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -71,5 +73,13 @@ public class Main {
             i.displayInfo();
         }
 
+        System.out.println();
+        Vehicle vehicle = new Vehicle(80,1.5);
+        vehicle.deliver("Самара");
+        System.out.println();
+        Truck truck = new Truck(100,10);
+        truck.deliver("москва");
+        Drone drone = new Drone(200, 0.5);
+        drone.deliver("питер");
     }
 }

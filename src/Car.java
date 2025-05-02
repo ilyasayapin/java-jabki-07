@@ -1,4 +1,4 @@
-public class Car extends Vehicle {
+public class Car extends VehicleClasswork {
 
     private String model;
 

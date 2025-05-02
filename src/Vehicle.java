@@ -1,14 +1,14 @@
 public class Vehicle {
 
-    private String brand;
+    private int maxSpeed;
+    private double cargoCapacity;
 
-    public Vehicle(String brand) {
-        this.brand = brand;
-
-        System.out.println("Заврешение работы конструктора Vehicle");
+    public Vehicle(int maxSpeed, double cargoCapacity) {
+        this.maxSpeed = maxSpeed;
+        this.cargoCapacity = cargoCapacity;
     }
 
-    public void startEngine() {
-        System.out.printf("Запуск двигателя для %s\n", this.brand);
+    public void deliver(String destination) {
+        System.out.printf("Доставка в %S.", destination);
     }
 }
