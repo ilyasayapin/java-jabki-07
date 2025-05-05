@@ -24,5 +24,4 @@ public class CreditAccount extends Account{
                 super.getBalance()
         );
     }
-
 }

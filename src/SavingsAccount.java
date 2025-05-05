@@ -11,9 +11,8 @@ public class SavingsAccount extends Account {
     public void withdraw(double amount) {
         if (amount > 1000) {
             throw new IllegalArgumentException("Запрет на снятие более 1000р за раз");
-        } else {
-            super.withdraw(amount);
         }
+        super.withdraw(amount);
     }
 
     public void applyInterest() {

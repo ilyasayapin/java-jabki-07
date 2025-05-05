@@ -9,5 +9,4 @@ public class Truck extends Vehicle{
         System.out.print("Грузовик загружен. ");
         super.deliver(destination);
     }
-
 }

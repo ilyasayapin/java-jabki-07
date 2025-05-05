@@ -28,7 +28,4 @@ public class Character {
         this.health -= damage;
         return health;
     }
-
-
-
 }

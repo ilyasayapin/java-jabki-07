@@ -20,5 +20,4 @@ public class Warrior extends Character {
                 getName(),
                 getHealth());
     }
-
 }

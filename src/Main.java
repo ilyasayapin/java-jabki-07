@@ -83,13 +83,14 @@ public class Main {
         Deliver.startDelivery(drone, "Луна");
 
         // 3.Зоопарк
+        System.out.println("---");
         ArrayList<Animal> animal = new ArrayList<Animal>();
         animal.add(new Lion("Левка",10));
         animal.add(new Parrot("Кеша",5));
 
-//        for (Animal j : animal) {
-//
-//        }
+        for (Animal j : animal) {
+            j.makeSound();
+        }
 
         // 4.Битва героев
         System.out.println("---");
@@ -105,9 +106,5 @@ public class Main {
         System.out.printf("\nМагия вне Хогвардса запрещена! Бой окончен. Победил: %s",
                 warrior.getName()
         );
-
-
-
-
     }
 }
