@@ -85,8 +85,8 @@ public class Main {
         // 3.Зоопарк
         System.out.println("---");
         ArrayList<Animal> animal = new ArrayList<Animal>();
-        animal.add(new Lion("Левка",10));
-        animal.add(new Parrot("Кеша",5));
+        animal.add(new Lion("Лёвка",10));
+        animal.add(new Parrot("Валентин Валентинович",5));
 
         for (Animal j : animal) {
             j.makeSound();
