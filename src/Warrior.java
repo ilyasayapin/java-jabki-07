@@ -22,11 +22,12 @@ public class Warrior extends Character {
 
     @Override
     public void takeDamage(int damage) {
-        if (blocking = true) {
+        if (blocking == true) {
             super.takeDamage(damage / 2);
             System.out.printf("%s заблокировал половину урона. Здоровье стало: %s",
                     getName(),
                     getHealth());
+            blocking = false;
         } else {
             super.takeDamage(damage);
             System.out.printf("%s Не смог заблокировать урон. Здоровье стало: %s",
