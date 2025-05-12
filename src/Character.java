@@ -24,8 +24,7 @@ public class Character {
         System.out.print("Атакую!");
     }
 
-    public int takeDamage(int damage) {
+    public void takeDamage(int damage) {
         this.health -= damage;
-        return health;
     }
 }

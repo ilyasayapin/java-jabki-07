@@ -98,11 +98,13 @@ public class Main {
         Mage mage = new Mage("Маг Коля", 100);
         System.out.println();
         warrior.attack();
-        mage.takeDamage(50);
+        mage.takeDamage(30);
         mage.heal(20);
         System.out.println();
+        System.out.println();
         mage.attack();
-        warrior.block(80);
+//        warrior.block();
+        warrior.takeDamage(10);
         System.out.printf("\nМагия вне Хогвардса запрещена! Бой окончен. Победил: %s",
                 warrior.getName()
         );
