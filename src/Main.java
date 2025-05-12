@@ -103,7 +103,7 @@ public class Main {
         System.out.println();
         System.out.println();
         mage.attack();
-        warrior.block();
+//        warrior.block();
         warrior.takeDamage(10);
         System.out.printf("\nМагия вне Хогвардса запрещена! Бой окончен. Победил: %s",
                 warrior.getName()
