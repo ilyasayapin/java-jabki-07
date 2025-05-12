@@ -14,7 +14,8 @@ public class Account {
     public void withdraw(double amount) {
         if (amount <= 0) {
             throw new IllegalArgumentException("Введите положительное число");
-        } else if (this.balance <= amount) {
+        }
+        if (this.balance <= amount) {
             throw new IllegalArgumentException("Баланс не может уйти в минус");
         }
         this.balance -= amount;

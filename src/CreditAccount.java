@@ -1,6 +1,6 @@
-public class CreditAccount extends Account{
+public class CreditAccount extends Account {
 
-    private int creditLimit;
+    private double creditLimit;
 
     public CreditAccount(double balance, int creditLimit) {
         super(balance);
@@ -11,9 +11,11 @@ public class CreditAccount extends Account{
     public void withdraw(double amount) {
         if (amount <= 0) {
             throw new IllegalArgumentException("Введите положительное число");
-        } else if (super.getBalance() - amount < -this.creditLimit) {
+        }
+        if (super.getBalance() - amount < -this.creditLimit) {
             throw new IllegalArgumentException("Вы превышаете кредитный лимит");
-        } super.setBalance(super.getBalance() - amount);
+        }
+        super.setBalance(super.getBalance() - amount);
     }
 
     @Override

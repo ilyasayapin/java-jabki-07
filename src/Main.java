@@ -85,8 +85,8 @@ public class Main {
         // 3.Зоопарк
         System.out.println("---");
         ArrayList<Animal> animal = new ArrayList<Animal>();
-        animal.add(new Lion("Лёвка",10));
-        animal.add(new Parrot("Валентин Валентинович",5));
+        animal.add(new Lion("Лёвка", 10));
+        animal.add(new Parrot("Валентин Валентинович", 5));
 
         for (Animal j : animal) {
             j.makeSound();
@@ -94,7 +94,7 @@ public class Main {
 
         // 4.Битва героев
         System.out.println("---");
-        Warrior warrior = new Warrior("Воин Петя",90);
+        Warrior warrior = new Warrior("Воин Петя", 90);
         Mage mage = new Mage("Маг Коля", 100);
         System.out.println();
         warrior.attack();

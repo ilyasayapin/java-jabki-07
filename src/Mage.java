@@ -15,7 +15,7 @@ public class Mage extends Character {
     }
 
     public void heal(int amount) {
-        setHealth(getHealth()+amount);
+        setHealth(getHealth() + amount);
         System.out.printf("%s вылечил себя на %s. Здоровье стало: %s",
                 getName(),
                 amount,

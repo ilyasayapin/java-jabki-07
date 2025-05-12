@@ -28,11 +28,11 @@ public class Warrior extends Character {
                     getName(),
                     getHealth());
             blocking = false;
-        } else {
-            super.takeDamage(damage);
-            System.out.printf("%s Не смог заблокировать урон. Здоровье стало: %s",
-                    getName(),
-                    getHealth());
         }
+        super.takeDamage(damage);
+        System.out.printf("%s Не смог заблокировать урон. Здоровье стало: %s",
+                getName(),
+                getHealth());
+
     }
 }
